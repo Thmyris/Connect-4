@@ -1,1 +1,2 @@
-# "Connect-4-Terminal-TR" 
+# Connect-4
+
