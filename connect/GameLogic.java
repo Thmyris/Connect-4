@@ -1,4 +1,4 @@
-package connect.pkg4;
+package connect;
 
 import java.util.Scanner;
 
@@ -14,8 +14,8 @@ public class GameLogic {
     public int chosen;
     public int oCounter = 0;
     public int xCounter = 0;
-    
-    
+
+
     public void startGame() {
         while(true){
             board1.welcomeScreen();
@@ -25,7 +25,7 @@ public class GameLogic {
             playAgain();
         }
     }
-    
+
     public void playAgain(){
         Scanner reader = new Scanner(System.in);
         System.out.println("Tekrar oynamak isterseniz Enter'a basin...");
@@ -65,7 +65,7 @@ public class GameLogic {
     public void checkWinCondition() {
         //geldik en kolay metoda :)
         int winnerVertical, winnerHorizontal, winnerCrossSE, winnerCrossSW; //0: nobody won //1: 1.oyuncu(O) kazandi //2: 2.oyuncu(X) kazandi
-///*        
+///*
         winnerVertical = verticalCheck();
         winnerHorizontal = horizontalCheck();
         winnerCrossSE = crossCheckSE();
@@ -74,7 +74,7 @@ public class GameLogic {
         if (winnerVertical != 0 || winnerHorizontal != 0 || winnerCrossSE != 0 || winnerCrossSW !=0) {//DEBUG
             System.out.println("winne: " + winnerVertical + winnerHorizontal + winnerCrossSE + winnerCrossSW);
         }
-*/        
+*/
         if (winnerVertical == 1 || winnerHorizontal == 1 || winnerCrossSE == 1 || winnerCrossSW ==1){
             System.out.println("1. oyuncu (O) oyunu kazandi!");
             isRunning=false;
@@ -83,7 +83,7 @@ public class GameLogic {
             System.out.println("2. oyuncu (X) oyunu kazandi!");
             isRunning=false;
         }
-//*/        
+//*/
 
         //---berabere kalma kontrolu //bu kontrol metodun sonuna konmak zorunda cunku berabere kalmadan once bir oyuncu oynu kazanabilir
         int sum = oCounter + xCounter;
@@ -126,7 +126,7 @@ public class GameLogic {
 
     private int horizontalCheck() { //return 0: nobody won //returns 1: 1.oyuncu(O) kazandi //returns 2: 2.oyuncu(X) kazandi //Screw trying to optimize performance in a spaghetti code like this. This method alone took years to write, scrapped most of my tries. Went with the most brute force option.
         for(int i=5;i>-1;i--){ //i is row, since i messed up the last(non-empty)EmptyHole we are checking every row, albeit in a rather fast way.
-            for(int j=0;j<4;j++){ //j is column, you only need to check 4 columns because you already check if there are 4 in a horizontal patter towards the right. 
+            for(int j=0;j<4;j++){ //j is column, you only need to check 4 columns because you already check if there are 4 in a horizontal patter towards the right.
                 if (!board1.multiArray[i][j].contains("-")){
                     if(board1.multiArray[i][j].contains("X") && board1.multiArray[i][j+1].contains("X") && board1.multiArray[i][j+2].contains("X") && board1.multiArray[i][j+3].contains("X")){
                         return 2;
@@ -134,7 +134,7 @@ public class GameLogic {
                         return 1;
                     }
                 }
-            }   
+            }
         }
         return 0;
     }
@@ -154,7 +154,7 @@ public class GameLogic {
         }
         return 0;
     }
-    
+
     private int crossCheckSW(){
         for (int i=0; i<3;i++){
             for(int j=3; j<7;j++){
@@ -181,7 +181,7 @@ public class GameLogic {
                 }
             }
             System.out.print("O sütun dolu. Lütfen başka bir sütun seçiniz. "); //bu 2 satir basima cok bela acti, bir dahakine bir metod bir is yapsin, O KADAR. KONTROLLERI FARKLI YERLERDE YAP
-            chosen = getInput();                                                
+            chosen = getInput();
         }
     }
 
