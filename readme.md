@@ -2,6 +2,7 @@
 A simple connect 4 game, written in java, that can be played as human vs human. No AI was implemented. The game uses X and O's to represent  yellow and red checkers. The in-game language is Turkish.  
 If you find any bugs please create an issue :)
 
+
 ## Playing
 First make sure java is installed (version 8.x.x)
 - In Windows: Simply run the 'run jar.bat' file.
@@ -23,10 +24,13 @@ v1.1:
 - Added an executable .jar file.  
 - Added an executable .bat file for windows for executing the .jar file, for convenience.  
 - Changed package name to 'connect'.  
-- Not changed: Wanted to add an executable .sh file for Linux but apparently you cannot execute shell files in GNU/Linux by double clicking them without giving them 'executable' permission :/  
+- Not changed: Wanted to add an executable .sh file for Linux but apparently you cannot execute shell files in GNU/Linux by double clicking them without giving them the 'executable' permission :/  
 
 v1.0:  
-- Initial release  
+- Initial release
+
+# More Updates?
+For the time being I consider this small weekend project done, will move on to other ventures.
 
 ## License  
 I do not own the concept idea of "Connect 4" or any of its assets. Pls no sue :P
