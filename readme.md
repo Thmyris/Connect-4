@@ -30,7 +30,7 @@ v1.0:
 - Initial release
 
 ###### More Updates?
-For the time being I consider this small weekend project done, will move on to other ventures.
+For the time being I consider this small weekend project done, will move on to other ventures. Maybe in the future I may come back to this to add an unbeatable AI (This is possible).
 
 ## License  
 I do not own the concept idea of "Connect 4" or any of its assets. Pls no sue :P
