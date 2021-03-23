@@ -8,8 +8,8 @@ A simple human vs human Connect 4 game, written in java. The game uses X and O's
 
 ## Playing
 First make sure java is installed (version 8.x.x)
-- **On Windows:** Simply run the `run jar.bat` file
-- **On Linux:** Run the command ```java connect.Connect4``` from up a folder. Running it on where the `.class` files are won't work
+- **On Windows:** Simply run the `run-jar.bat` file
+- **On Linux:** Open up a terminal in the `connect` folder and type `chmod +x run-jar.sh`. Then type `./run-jar.sh` 
 
 ## Building from source
 Make sure `JDK 8` is installed and added to `PATH`. Then, open a terminal and navigate to where the `.java` files are:
@@ -18,10 +18,16 @@ Make sure `JDK 8` is installed and added to `PATH`. Then, open a terminal and na
 2. (Optional) If you wish to build the `.jar` file as well, you can use this command:  
 ```jar cmvf META-INF/MANIFEST.MF run.jar  *.class```  
 The MANIFEST.mf file is already set.
+3. To run from source, use the command ```java connect.Connect4``` from up a folder. Running it on where the `.class` files are won't work.
 
 
 ### Changelog:  
+v1.2:
+
+- Added linux executable
+
 v1.1:
+
 - Removed useless IDE files and recompiled classes with `javac`
 - Added an executable `.jar` file.  
 - Added an executable `.bat` file for ease of use in windows
