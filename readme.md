@@ -22,11 +22,11 @@ The MANIFEST.mf file is already set.
 
 
 ### Changelog:  
-v1.2:
+v1.2(2021):
 
 - Added linux executable
 
-v1.1:
+v1.1(2019):
 
 - Removed useless IDE files and recompiled classes with `javac`
 - Added an executable `.jar` file.  
@@ -34,7 +34,7 @@ v1.1:
 - Changed package name to 'connect'
 - Not changed: Wanted to add an executable `.sh` file for Linux but you cannot execute shell files in Linux by double clicking them without giving them the 'executable' permission :/
 
-v1.0:  
+v1.0(2019):  
 - Initial release
 
 ###### More Updates?
